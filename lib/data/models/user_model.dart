@@ -1,6 +1,5 @@
 import 'package:assignment_app/domain/entities/user.dart';
 
-
 class UserModel extends User {
   UserModel({
     required super.id,
@@ -18,5 +17,15 @@ class UserModel extends User {
       lastName: json['last_name'],
       imageUrl: json['avatar'],
     );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'email': email,
+      "first_name": firstName,
+      'last_name': lastName,
+      'avatar': imageUrl,
+    };
   }
 }

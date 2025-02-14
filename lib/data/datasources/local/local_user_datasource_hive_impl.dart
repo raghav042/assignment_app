@@ -1,4 +1,6 @@
+import 'package:assignment_app/data/models/user_model.dart';
 import 'package:hive_ce/hive.dart';
+import 'package:hive_ce_flutter/adapters.dart';
 
 import '../../../core/constant/app_constant.dart';
 import '../../../domain/entities/user.dart';
@@ -9,12 +11,19 @@ class LocalUserDataSourceHiveImpl implements LocalUserDataSource {
   static final userBox = Hive.box(AppConstant.userBox);
 
   @override
-  List<User> getAllUsers() {
+  Future<void> init() async {
+    await Hive.initFlutter();
+    Hive.registerAdapter(UserAdapter());
+    await Hive.openBox(AppConstant.userBox);
+  }
+
+  @override
+  List<UserModel> getAllUsers() {
     return userBox.get(userKey)?.cast<User>() ?? [];
   }
 
   @override
-  Future<void> saveAllUsers(List<User> users) async {
+  Future<void> saveAllUsers(List<UserModel> users) async {
     await userBox.put(userKey, users);
   }
 }

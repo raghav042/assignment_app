@@ -1,6 +1,6 @@
 import 'package:assignment_app/core/extensions/string_extensions.dart';
+import 'package:assignment_app/core/navigation/routes.dart';
 import 'package:assignment_app/domain/entities/user.dart';
-import 'package:assignment_app/presentation/screens/user_details/user_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class UserTile extends StatelessWidget {
@@ -11,8 +11,7 @@ class UserTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (_) => UserDetailScreen(user: user)));
+        Navigator.of(context).pushNamed(Routes.userDetail, arguments: user);
       },
       leading: Hero(
         tag: "profile_pic${user.id}",

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'core/navigation/app_routes.dart';
+import 'core/navigation/routes.dart';
 import 'core/theme/dark_theme.dart';
 import 'core/theme/light_theme.dart';
-import 'presentation/screens/home/user_list_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -12,7 +13,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: lightTheme,
       darkTheme: darkTheme,
-      home: const UserListScreen(),
+      initialRoute: Routes.userList,
+      onGenerateRoute: AppRoutes.generateRoute,
     );
   }
 }
