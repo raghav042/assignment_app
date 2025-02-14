@@ -9,10 +9,6 @@
 * **User List Screen**: Displays a paginated list of users with their profile pictures and names. Implements infinite scrolling to load more users as the user scrolls down. Includes a search bar to filter users by name.
 * **User Detail Screen**: Shows detailed information for a selected user, including profile picture, name, email, and phone number.
 
-## Objective
-
-Develop a simple Flutter application to demonstrate your skills in state management, API integration, and UI development.
-
 ## Features
 
 * **User List Screen:**
