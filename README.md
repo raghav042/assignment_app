@@ -1,6 +1,6 @@
 # Flutter Assignment App
 <br><br>
-![List Users ](https://github.com/raghav042/assignment_app/blob/main/screenshots/Screenshot_2025-02-14-10-13-00-380_com.example.assignment_app.jpg)
+![List Users ](https://github.com/raghav042/assignment_app/blob/main/screenshots/Screenshot_2025-02-14-10-13-00-380_com.example.assignment_app.jpg, width = 300)
 ![User Details](https://github.com/raghav042/assignment_app/blob/main/screenshots/Screenshot_2025-02-14-10-13-10-576_com.example.assignment_app.jpg)
 
 The application consists of two main screens:
