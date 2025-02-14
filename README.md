@@ -1,8 +1,7 @@
 # Flutter Assignment App
 <br><br>
-![List Users ](https://github.com/raghav042/assignment_app/blob/main/screenshots/Screenshot_2025-02-14-10-13-00-380_com.example.assignment_app.jpg width = 300)
-![User Details](https://github.com/raghav042/assignment_app/blob/main/screenshots/Screenshot_2025-02-14-10-13-10-576_com.example.assignment_app.jpg)
-
+<img src="https://github.com/raghav042/assignment_app/blob/main/screenshots/Screenshot_2025-02-14-10-13-00-380_com.example.assignment_app.jpg" width="250">
+<img src="https://github.com/raghav042/assignment_app/blob/main/screenshots/Screenshot_2025-02-14-10-13-10-576_com.example.assignment_app.jpg" width="250">
 The application consists of two main screens:
 
 * **User List Screen**: Displays a paginated list of users with their profile pictures and names. Implements infinite scrolling to load more users as the user scrolls down. Includes a search bar to filter users by name.
